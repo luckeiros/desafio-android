@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.picpay.desafio.android.model.User
 import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Callback
@@ -56,12 +57,12 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         service.getUsers()
             .enqueue(object : Callback<List<User>> {
                 override fun onFailure(call: Call<List<User>>, t: Throwable) {
-                    val message = getString(R.string.error)
+//                    val message = getString(R.string.error)
 
                     progressBar.visibility = View.GONE
                     recyclerView.visibility = View.GONE
 
-                    Toast.makeText(this@MainActivity, message, Toast.LENGTH_SHORT)
+                    Toast.makeText(this@MainActivity, "", Toast.LENGTH_SHORT)
                         .show()
                 }
 
