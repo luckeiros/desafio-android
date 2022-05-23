@@ -28,7 +28,7 @@ class UserListAdapter(
 
     override fun getItemCount(): Int = userList.size
 
-    inner class UserListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class UserListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bindView(user: User) {
             with(itemView) {
