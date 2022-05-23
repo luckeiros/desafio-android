@@ -21,7 +21,7 @@ class UserListViewModel @Inject constructor(private val repository: UserReposito
         viewState.userListState.emit(UserListState.Display(users))
     }
 
-    fun loadUsers() = safeLaunch(handleError()) {
+    fun loadUsers() = safeLaunch(::handleError) {
         viewState.userListState.emit(UserListState.Loading)
         getUsers()
     }
