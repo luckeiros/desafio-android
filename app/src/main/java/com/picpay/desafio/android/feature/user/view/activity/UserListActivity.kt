@@ -52,7 +52,7 @@ class UserListActivity : AppCompatActivity() {
         rvPicPayUserList.adapter = UserListAdapter(userList.toMutableList(), this)
     }
 
-    private fun showError() = Toast.makeText(this, "error", Toast.LENGTH_LONG).show()
+    private fun showError() = Toast.makeText(this, getString(R.string.error_message), Toast.LENGTH_LONG).show()
 
     private fun showLoading(){
         rvPicPayUserList.turnGone()
