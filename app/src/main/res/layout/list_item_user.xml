@@ -18,7 +18,7 @@
             android:id="@+id/clContainer"
             android:layout_width="@dimen/match_constraint"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/medium_margin"
+            android:layout_marginStart="@dimen/large_margin"
             app:layout_constraintBottom_toBottomOf="@+id/imgUser"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgUser"
@@ -37,7 +37,7 @@
                 android:textSize="@dimen/text_large_size"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:text="@string/username"/>
+                tools:text="@string/username_mock"/>
 
             <TextView
                 android:id="@+id/tvName"
@@ -52,7 +52,7 @@
                 android:textSize="@dimen/text_large_size"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvUsername"
-                tools:text="@string/name" />
+                tools:text="@string/name_mock" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

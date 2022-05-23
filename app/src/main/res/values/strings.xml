@@ -5,7 +5,9 @@
     <string name="picpay_users_title">Usuários PicPay</string>
     <string name="user_image">Imagem do usuário</string>
     <string name="username">\@%1$s</string>
+    <string name="username_mock">\@lucasferreira</string>
     <string name="name">Lucas Ferreira</string>
+    <string name="name_mock">Lucas Ferreira</string>
 
     <string name="error_message">Não foi possível completar. Por favor, tente novamente mais tarde.</string>
 </resources>
