@@ -10,9 +10,8 @@ import com.picpay.desafio.android.commons.extension.showUserImage
 import com.picpay.desafio.android.commons.model.User
 import kotlinx.android.synthetic.main.list_item_user.view.*
 import java.util.*
-import javax.inject.Inject
 
-class UserListAdapter @Inject constructor(
+class UserListAdapter(
     private val userList: MutableList<User>,
     private val context: Context
 ) : RecyclerView.Adapter<UserListAdapter.UserListViewHolder>() {
