@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#1D1E20</color>
     <color name="colorPrimaryLight">#ACB1BD</color>
     <color name="colorDetail">#80FFFFFF</color>
+
     <color name="colorPicPay">#11C76F</color>
+    <color name="colorWhite">#FFFFFF</color>
 </resources>

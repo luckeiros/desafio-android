@@ -71,6 +71,9 @@ dependencies {
     /* picasso */
     implementation "com.squareup.picasso:picasso:$picasso_version"
 
+    /* circle imageview */
+    implementation "de.hdodenhof:circleimageview:$circleimageview_version"
+
     /* test */
     testImplementation "junit:junit:$junit_version"
     androidTestImplementation "androidx.test.ext:junit:$junit_androidx_version"
