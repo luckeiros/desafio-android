@@ -41,6 +41,15 @@ class UserListActivity : AppCompatActivity() {
         }
     }
 
+    private fun setupAdapter(userList: List<User>) {
+        rvPicPayUserList.adapter = UserListAdapter(userList.toMutableList(), this)
+    }
+
+    private fun showLoading() {
+        rvPicPayUserList.turnGone()
+        pbPicPay.turnVisible()
+    }
+
     private fun showUserList(userList: List<User>) {
         pbPicPay.turnGone()
         rvPicPayUserList.turnVisible()
@@ -48,15 +57,7 @@ class UserListActivity : AppCompatActivity() {
         setupAdapter(userList)
     }
 
-    private fun setupAdapter(userList: List<User>) {
-        rvPicPayUserList.adapter = UserListAdapter(userList.toMutableList(), this)
-    }
-
-    private fun showError() = Toast.makeText(this, getString(R.string.error_message), Toast.LENGTH_LONG).show()
-
-    private fun showLoading(){
-        rvPicPayUserList.turnGone()
-        pbPicPay.turnVisible()
-    }
+    private fun showError() =
+        Toast.makeText(this, getString(R.string.error_message), Toast.LENGTH_LONG).show()
 
 }
